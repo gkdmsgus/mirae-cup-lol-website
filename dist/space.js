@@ -3,7 +3,7 @@
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const colors = ['255,255,255', '205,222,255', '226,208,255', '168,212,255'];
+  const colors = ['255,255,255', '205,225,255', '168,212,255', '140,190,255', '255,226,170'];
   let width = 0, height = 0, stars = [], meteors = [], nextMeteor = 3, last = 0, frame = 0;
 
   function makeStar() {
