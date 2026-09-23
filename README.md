@@ -25,6 +25,7 @@ python -m http.server 4173 --bind 127.0.0.1 --directory dist
 - `dist/index.html`: 제목, 대회 안내, FAQ
 - `dist/styles.css`: 색상, 글꼴, 화면 배치
 - `dist/app.js`: 모바일 메뉴
+- `dist/space.js`: 우주 배경의 별·별똥별 애니메이션 (성운 색과 움직임은 `dist/styles.css`의 `.nebula`)
 - `dist/assets/trophy-lcc.png`: 사용자 제공 트로피
 
 ## 검증 계획
