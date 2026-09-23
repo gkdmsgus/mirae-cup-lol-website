@@ -16,5 +16,5 @@
 
 문구 수정: dist/index.html
 색상/배치 수정: dist/styles.css
-이미지 교체: dist/assets/trophy.png
+이미지 교체: dist/assets/trophy-lcc.png
 상세 안내: README.md

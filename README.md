@@ -14,7 +14,7 @@ python -m http.server 4173 --bind 127.0.0.1 --directory dist
 
 - 대회명은 `2026 LCC`(League of Legends Champions, Computer Engineering)입니다. 종목은 리그 오브 레전드입니다.
 - 대회 일정, 참가 대상·티어, 팀 구성·경기 방식, 시상은 ‘추후 공개’입니다. 가짜 접수 완료나 개인정보 수집 기능은 없습니다.
-- 사용자 제공 트로피 PNG를 가공 없이 사용했습니다. 원본 크기 1024 × 1536 px, 투명 배경입니다.
+- 사용자 제공 트로피 PNG를 가공 없이 사용했습니다. 원본 크기 357 × 516 px입니다.
 - 색상: 배경 `#080b12`, 파랑 `#32aaff`, 실버 `#c7d2df`.
 - 영문 Barlow Condensed, 한글 Noto Sans KR. Google Fonts가 차단되면 시스템 글꼴로 대체됩니다.
 - PC 내비게이션, 모바일 펼침 메뉴, 구간 이동, FAQ 펼침, 맨 위로 이동, 키보드 접근, 모션 감소 설정을 지원합니다.
@@ -25,7 +25,7 @@ python -m http.server 4173 --bind 127.0.0.1 --directory dist
 - `dist/index.html`: 제목, 대회 안내, FAQ
 - `dist/styles.css`: 색상, 글꼴, 화면 배치
 - `dist/app.js`: 모바일 메뉴
-- `dist/assets/trophy.png`: 사용자 제공 트로피
+- `dist/assets/trophy-lcc.png`: 사용자 제공 트로피
 
 ## 검증 계획
 
