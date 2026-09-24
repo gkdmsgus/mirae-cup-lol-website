@@ -27,3 +27,4 @@
 .section-top>p.eyebrow{display:block;color:var(--blue)}
 .brand-sub-line{margin-top:0}
 .footer-github{margin-left:auto}
+.header-cta{background:var(--blue);border-color:var(--blue);color:#051323}.header-cta:hover{background:#66c1ff}.apply-button{margin-top:26px}.mobile-nav .mobile-apply{margin-top:10px;padding:13px 16px;border-radius:4px;background:var(--blue);color:#051323;font-weight:700;display:flex;justify-content:space-between}
