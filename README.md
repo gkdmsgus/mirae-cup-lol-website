@@ -25,7 +25,7 @@ python -m http.server 4173 --bind 127.0.0.1 --directory dist
 - `dist/index.html`: 제목, 대회 안내, FAQ
 - `dist/styles.css`: 색상, 글꼴, 화면 배치
 - `dist/app.js`: 모바일 메뉴
-- `dist/teams.js`: 참가 팀·선수 정보 (학과, 이름, 티어, 주 챔피언, 사진). 비워 둔 값은 "추후 공개"로 표시. 사진은 `dist/assets/players/`에 넣고 경로를 적으면 됩니다.
+- `dist/teams.js`: (현재 숨김 — `index.html`의 `#teams` 섹션 주석 참고) 참가 팀·선수 정보 (학과, 이름, 티어, 주 챔피언, 사진). 비워 둔 값은 "추후 공개"로 표시. 사진은 `dist/assets/players/`에 넣고 경로를 적으면 됩니다.
 - `dist/space.js`: 우주 배경의 별·별똥별 애니메이션 (성운 색과 움직임은 `dist/styles.css`의 `.nebula`)
 - `dist/assets/trophy-lcc.png`: 사용자 제공 트로피
 
