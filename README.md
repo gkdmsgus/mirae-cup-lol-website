@@ -13,7 +13,7 @@ python -m http.server 4173 --bind 127.0.0.1 --directory dist
 ## 내용과 전제
 
 - 대회명은 `2026 LCC`(League of Legends Champions, Computer Engineering)입니다. 종목은 리그 오브 레전드입니다.
-- 대회 일정, 참가 대상·티어, 팀 구성·경기 방식, 시상은 ‘추후 공개’입니다. 가짜 접수 완료나 개인정보 수집 기능은 없습니다.
+- 참가 신청은 외부 구글폼으로 받습니다. 참가 선수는 ‘추후 공개’(LINE-UP 섹션)이며, 사이트 자체에는 개인정보 수집 기능이 없습니다.
 - 사용자 제공 트로피 PNG를 가공 없이 사용했습니다. 원본 크기 357 × 516 px입니다.
 - 색상: 배경 `#080b12`, 파랑 `#32aaff`, 실버 `#c7d2df`.
 - 영문 Barlow Condensed, 한글 Noto Sans KR. Google Fonts가 차단되면 시스템 글꼴로 대체됩니다.
