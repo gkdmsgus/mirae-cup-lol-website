@@ -1,0 +1,4 @@
+# Netlify 배포 설정: 웹페이지는 dist 폴더에 있으므로 dist만 공개합니다.
+# 빌드 과정이 없는 정적 사이트라 build command는 비워 둡니다.
+[build]
+  publish = "dist"
