@@ -24,6 +24,7 @@
   <script src="notice.js" defer></script>
 </head>
 <body>
+  <svg class="sr-only" aria-hidden="true" focusable="false"><filter id="outline-text" x="-5%" y="-10%" width="110%" height="120%" color-interpolation-filters="sRGB"><feMorphology in="SourceAlpha" operator="dilate" radius="1" result="grown"/><feComposite in="grown" in2="SourceAlpha" operator="out" result="ring"/><feFlood flood-color="#9fb4cc"/><feComposite in2="ring" operator="in"/></filter></svg>
   <div class="space-bg" aria-hidden="true"><div class="nebula nebula-far"></div><div class="nebula nebula-near"></div><canvas id="starfield"></canvas></div>
   <a class="skip-link" href="#main">본문 바로가기</a>
   <header class="site-header">
