@@ -2,6 +2,10 @@
 
 NYPC의 검은 배경과 강한 타이포그래피를 참고해, 사용자가 제공한 트로피의 블루·실버에 맞춘 리그 오브 레전드(LoL) 대회용 반응형 단일 페이지 홈페이지입니다. NYPC·넥슨·Riot Games의 공식 홈페이지가 아니며, 해당 브랜드의 로고나 운영 정보를 복제하지 않았습니다.
 
+## 배포
+
+Netlify(https://2026-lcc.netlify.app/)에 배포합니다. 저장소 루트의 `netlify.toml`이 `dist` 폴더만 공개하도록 지정합니다.
+
 ## 실행
 
 `dist/index.html`을 브라우저에서 열면 됩니다. 별도 설치나 빌드는 필요 없습니다. 웹 서버에서는 `dist` 폴더를 루트로 제공합니다.
@@ -27,7 +31,7 @@ python -m http.server 4173 --bind 127.0.0.1 --directory dist
 - `dist/app.js`: 모바일 메뉴
 - `dist/teams.js`: (현재 숨김 — `index.html`의 `#teams` 섹션 주석 참고) 참가 팀·선수 정보 (학과, 이름, 티어, 주 챔피언, 사진). 비워 둔 값은 "추후 공개"로 표시. 사진은 `dist/assets/players/`에 넣고 경로를 적으면 됩니다.
 - 첫 방문 공지 팝업: 문구는 `dist/index.html`의 `<dialog id="notice">`, 동작은 `dist/notice.js` ("오늘 하루 보지 않기"는 방문자 브라우저에 날짜 저장)
-- 대회 포스터: 세로 `dist/assets/poster.webp`(첫 화면 배경, 모바일 슬로건 배경), 가로 `dist/assets/poster-wide.webp`(PC 슬로건 배경), 링크 미리보기 `dist/assets/og-image.jpg`(1200×630). 배포 후 `index.html`의 `og:image`를 전체 주소로 바꿔야 미리보기가 뜹니다.
+- 대회 포스터: 세로 `dist/assets/poster.webp`(첫 화면 배경, 모바일 슬로건 배경), 가로 `dist/assets/poster-wide.webp`(PC 슬로건 배경), 링크 미리보기 `dist/assets/og-image.jpg`(1200×630). 배포 주소(https://2026-lcc.netlify.app/)가 바뀌면 `index.html`의 `og:url`·`og:image`도 바꿔야 합니다.
 - `dist/space.js`: 우주 배경의 별·별똥별 애니메이션 (성운 색과 움직임은 `dist/styles.css`의 `.nebula`)
 - `dist/assets/trophy-lcc.png`: 사용자 제공 트로피
 
