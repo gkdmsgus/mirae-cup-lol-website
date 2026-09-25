@@ -14,12 +14,13 @@ for(const m of html.matchAll(/(?:src|href)="([^"#]+)"/g)) {
 }
 assert.match(html,/<html lang="ko">/);
 assert.equal([...html.matchAll(/<h1\b/g)].length,1);
-assert.equal([...html.matchAll(/<details>/g)].length,4);
+assert.match(html,/id="organizers"/);
+assert.equal([...html.matchAll(/class="org-member"/g)].length,8);
 assert.match(html,/리그 오브 레전드/);
-assert.match(html,/참가 티어/);
+assert.match(html,/참가 대상·티어/);
 assert.doesNotMatch(html,/프로그래밍|CODE CHALLENGE|YOUR CODE|사용 언어|AI 도구|코드로/);
 const png=fs.readFileSync(path.join(dist,'assets','trophy-lcc.png'));
 assert.equal(png.readUInt32BE(16),357);
 assert.equal(png.readUInt32BE(20),516);
 execFileSync(process.execPath,['--check',path.join(dist,'app.js')]);
-console.log('PASS: anchors, unique IDs, local assets, PNG dimensions, Korean language, heading, 4 FAQs, JS syntax.');
+console.log('PASS: anchors, unique IDs, local assets, PNG dimensions, Korean language, heading, 8 organizers, JS syntax.');
