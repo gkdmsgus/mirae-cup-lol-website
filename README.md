@@ -27,7 +27,7 @@ python -m http.server 4173 --bind 127.0.0.1 --directory dist
 - `dist/app.js`: 모바일 메뉴
 - `dist/teams.js`: (현재 숨김 — `index.html`의 `#teams` 섹션 주석 참고) 참가 팀·선수 정보 (학과, 이름, 티어, 주 챔피언, 사진). 비워 둔 값은 "추후 공개"로 표시. 사진은 `dist/assets/players/`에 넣고 경로를 적으면 됩니다.
 - 첫 방문 공지 팝업: 문구는 `dist/index.html`의 `<dialog id="notice">`, 동작은 `dist/notice.js` ("오늘 하루 보지 않기"는 방문자 브라우저에 날짜 저장)
-- 대회 포스터: 세로 `dist/assets/poster.webp`(모바일 배경), 가로 `dist/assets/poster-wide.webp`(PC 배경), 링크 미리보기 `dist/assets/og-image.jpg`(1200×630). 배포 후 `index.html`의 `og:image`를 전체 주소로 바꿔야 미리보기가 뜹니다.
+- 대회 포스터: 세로 `dist/assets/poster.webp`(첫 화면 배경, 모바일 슬로건 배경), 가로 `dist/assets/poster-wide.webp`(PC 슬로건 배경), 링크 미리보기 `dist/assets/og-image.jpg`(1200×630). 배포 후 `index.html`의 `og:image`를 전체 주소로 바꿔야 미리보기가 뜹니다.
 - `dist/space.js`: 우주 배경의 별·별똥별 애니메이션 (성운 색과 움직임은 `dist/styles.css`의 `.nebula`)
 - `dist/assets/trophy-lcc.png`: 사용자 제공 트로피
 
