@@ -11,7 +11,7 @@
 
 대회명: 2026 LCC (League of Legends Champions, Computer Engineering)
 종목: 리그 오브 레전드 (LoL)
-일정, 참가 대상/티어, 팀 구성/경기 방식, 시상: 추후 공개
+참가 선수: 추후 공개
 현재는 디자인 확인용이며 실제 참가 접수 기능은 없습니다.
 
 문구 수정: dist/index.html
