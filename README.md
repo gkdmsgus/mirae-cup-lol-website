@@ -29,7 +29,7 @@ python -m http.server 4173 --bind 127.0.0.1 --directory dist
 - `dist/index.html`: 제목, 대회 안내, 운영진 명단
 - `dist/styles.css`: 색상, 글꼴, 화면 배치
 - `dist/app.js`: 모바일 메뉴
-- 참가 선수·대진표: `dist/index.html`의 `#lineup`(팀별 라인·이름·티어), `#bracket`(3팀 풀리그 + 결승) 섹션에서 직접 수정
+- 참가 선수: `dist/index.html`의 `#lineup`(팀별 라인·이름·최고 티어) 섹션에서 직접 수정. 대진표(`#bracket`)는 아직 추후 공개 상태
 - 첫 방문 공지 팝업: 문구는 `dist/index.html`의 `<dialog id="notice">`, 동작은 `dist/notice.js` ("오늘 하루 보지 않기"는 방문자 브라우저에 날짜 저장)
 - 대회 포스터: 세로 `dist/assets/poster.webp`(첫 화면 배경, 모바일 슬로건 배경), 가로 `dist/assets/poster-wide.webp`(PC 슬로건 배경), 링크 미리보기 `dist/assets/og-image.jpg`(1200×630). 배포 주소(https://2026-lcc.netlify.app/)가 바뀌면 `index.html`의 `og:url`·`og:image`도 바꿔야 합니다.
 - `dist/space.js`: 우주 배경의 별·별똥별 애니메이션 (성운 색과 움직임은 `dist/styles.css`의 `.nebula`)
