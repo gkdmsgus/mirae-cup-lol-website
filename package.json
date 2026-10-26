@@ -1,0 +1,15 @@
+{
+  "name": "2026-lcc-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "2026 LCC (League of Legends Champions, Computer engineering) 대회 홈페이지",
+  "type": "module",
+  "scripts": {
+    "dev": "node dev-server.mjs",
+    "start": "node dev-server.mjs",
+    "check": "node verify.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
