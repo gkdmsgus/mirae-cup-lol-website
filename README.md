@@ -8,7 +8,14 @@ Netlify(https://2026-lcc.netlify.app/)에 배포합니다. 저장소 루트의 `
 
 ## 실행
 
-`dist/index.html`을 브라우저에서 열면 됩니다. 별도 설치나 빌드는 필요 없습니다. 웹 서버에서는 `dist` 폴더를 루트로 제공합니다.
+```bash
+npm run dev      # http://localhost:4173 에서 미리보기 (Ctrl + C로 종료)
+npm run check    # 링크·이미지·선수 정보 등 검사
+```
+
+별도 설치(`npm install`)나 빌드는 필요 없습니다. Node.js 18 이상만 있으면 됩니다. 포트를 바꾸려면 `PORT=5173 npm run dev`.
+
+Node 없이 보려면 `dist/index.html`을 브라우저에서 열거나, 아래처럼 `dist` 폴더를 루트로 제공하면 됩니다.
 
 ```powershell
 python -m http.server 4173 --bind 127.0.0.1 --directory dist
