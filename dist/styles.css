@@ -77,3 +77,4 @@
 .fx-board{grid-template-columns:minmax(0,1.15fr) 48px minmax(0,1.2fr)}.fx-board .res-match{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;padding:14px 16px}.fx-board .res-team{justify-content:flex-start;flex-wrap:nowrap}.fx-board .res-team:last-of-type{justify-content:flex-end}.fx-board .res-team>span{white-space:nowrap}.fx-board .res-team em{padding:3px 6px;border-radius:3px;background:#32aaff1f;font-size:11px;letter-spacing:1.5px}
 @media(max-width:720px){.fx-board .res-match{gap:8px;padding:12px 10px}.fx-board .res-team em{display:none}.fx-board .res-win>span{color:var(--blue)}}
 @media(max-width:900px){.fx-board{grid-template-columns:1fr;max-width:520px}}
+.fx-board{margin-top:0}
