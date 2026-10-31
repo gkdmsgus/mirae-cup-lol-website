@@ -78,3 +78,4 @@
 @media(max-width:720px){.fx-board .res-match{gap:8px;padding:12px 10px}.fx-board .res-team em{display:none}.fx-board .res-win>span{color:var(--blue)}}
 @media(max-width:900px){.fx-board{grid-template-columns:1fr;max-width:520px}}
 .fx-board{margin-top:0}
+.fx-board .res-list,.fx-board .rr-final{justify-self:stretch;width:auto;margin:0}
