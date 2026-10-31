@@ -32,5 +32,5 @@ assert.doesNotMatch(html,/프로그래밍|CODE CHALLENGE|YOUR CODE|사용 언어
 const png=fs.readFileSync(path.join(dist,'assets','trophy-lcc.png'));
 assert.equal(png.readUInt32BE(16),357);
 assert.equal(png.readUInt32BE(20),516);
-execFileSync(process.execPath,['--check',path.join(dist,'app.js')]);
+for (const js of ['app.js','space.js','notice.js','section-scroll.js']) execFileSync(process.execPath,['--check',path.join(dist,js)]);
 console.log('PASS: anchors, unique IDs, local assets, PNG dimensions, Korean language, heading, 9 organizers, 15 roster players (no Riot IDs), prelim results (3 matches) + final, replays, prizes, 7 FAQs, JS syntax.');
