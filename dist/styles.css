@@ -79,14 +79,3 @@
 @media(max-width:900px){.fx-board{grid-template-columns:1fr;max-width:520px}}
 .fx-board{margin-top:0}
 .fx-board .res-list,.fx-board .rr-final{justify-self:stretch;width:auto;margin:0}
-/* 한 화면 = 한 섹션 + 섹션 단위 스크롤 (PC에서만, 모바일·낮은 화면은 자유 스크롤) */
-@media(min-width:901px) and (min-height:700px){
-  html{scroll-snap-type:y mandatory;scroll-padding-top:0}
-  :root{--band-h:calc(36px + clamp(22px,2.65vw,42px))}
-  .site-header,.faq,.closing{scroll-snap-align:start}
-  .site-footer{scroll-snap-align:end}
-  .replay,.schedule,.bracket,.lineup,.organizers{scroll-snap-align:start;min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding-top:72px;padding-bottom:72px}
-  /* 다시보기는 위의 파란 문구 띠까지 한 화면에 보이도록 */
-  .replay{scroll-margin-top:var(--band-h);min-height:calc(100svh - var(--band-h))}
-  .replay>*,.schedule>*,.bracket>*,.lineup>*,.organizers>*{width:100%}
-}
