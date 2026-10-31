@@ -1,7 +1,7 @@
 (() => {
   const dialog = document.getElementById('notice');
   if (!dialog || typeof dialog.showModal !== 'function') return;
-  const KEY = 'lcc-notice-hidden-on';
+  const KEY = 'lcc-final-notice-hidden-on'; // 공지 내용을 바꾸면 키도 바꿔서, 예전에 숨긴 사람에게도 새 공지가 보이게
   const now = new Date();
   const today = `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}`;
 
