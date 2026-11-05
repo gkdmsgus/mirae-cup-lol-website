@@ -84,3 +84,4 @@
 .notice-top{margin-bottom:16px}.notice h2{margin-bottom:14px}.notice-body p{margin-bottom:12px}.notice-define{margin-bottom:12px;padding:12px 16px}.notice-actions{margin-top:16px;padding-top:12px}.nf-matchup{margin-bottom:12px!important;padding:10px}.nf-info li{padding:10px 12px}.nf-live{margin-bottom:14px!important}
 @media(max-width:420px){.nf-info{grid-template-columns:1fr 1fr;gap:8px}.nf-info li{grid-template-columns:1fr;padding:10px}.nf-ico{display:none}.nf-value{font-size:13px}}
 @media(max-width:330px){.nf-info{grid-template-columns:1fr}}
+.nf-info li:last-child:nth-child(odd){grid-column:1/-1}
