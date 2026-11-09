@@ -25,7 +25,7 @@ assert.doesNotMatch(html,/id="faq"/);
 assert.equal([...html.matchAll(/class="res-match"/g)].length,3);
 assert.match(html,/class="rr-final"/);
 assert.match(html,/id="replay"/);
-assert.equal([...html.matchAll(/class="vod-cell"/g)].length,4);
+assert.equal([...html.matchAll(/<li class="vod-cell"><div/g)].length,4);
 execFileSync(process.execPath,['--check',path.join(dist,'replay.js')]);
 assert.match(html,/Riot Games와 무관한 비공식 팬 행사/);
 assert.equal([...html.matchAll(/class="roster-row"/g)].length,15);
